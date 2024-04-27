@@ -1,0 +1,894 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dosis:wght@600;800&family=DynaPuff&family=Sansita+Swashed&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-image: url(/Img/MusicBg.jpg); */
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
+  /* display: grid; */
+  place-items: center;
+  /* background-color: var(--body-color); */
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+canvas{
+  position: absolute;
+  right: 917px;
+  top: 320px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.p1 p{
+  position: absolute;
+  right: 934px;
+  top: 320px;
+  font-size: 35px;
+  color: #ccc;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Dosis", sans-serif;
+  font-family: "DynaPuff", cursive;
+  font-family: "Sansita Swashed", cursive;
+}
+
+/* .img1 {
+  height: 300px;
+  width: 400px;
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+  box-shadow: 0px 0px 20px white;
+  justify-content: center;
+} */
+
+/* .img2{
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  bottom: 100px;
+  left: 600px;
+  box-shadow: 0px 0px 200px white;
+} */
+
+/* .img3 {
+  height: 300px;
+  width: 350px;
+  position: absolute;
+  bottom: 300px;
+  left: 500px;
+  box-shadow: 100px 0px 400px black;
+} */
+
+/* #ytlogo {
+  position: absolute;
+  top: 560px;
+  right: 950px;
+  font-size: 50px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Dosis", sans-serif;
+  font-family: "DynaPuff", cursive;
+  font-family: "Sansita Swashed", cursive;
+  text-transform: capitalize;
+} */
+.owl-carousel {
+  top: 625px;
+}
+
+.owl-carousel .item-video {
+  /* height: 300px; */
+  display: grid;
+  size: cover;
+  grid-template-columns: repeat(4, 100%);
+  height: 300px;
+  width: 400px;
+  scroll-behavior: smooth;
+  animation: slider 50s ease-out infinite alternate;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.owl-dot {
+  display: inline-block;
+}
+
+.owl-dot span {
+  width: 11px;
+  height: 11px;
+  background: #fff;
+  border-radius: 50%;
+  display: block;
+  margin: 5px 3px;
+}
+
+.owl-dot.active span {
+  size: cover;
+}
+
+.owl-dot:hover {
+  opacity: 0.1;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0%);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(-200%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-300%);
+  }
+  70% {
+    transform: translateX(-300%);
+  }
+  80% {
+    transform: translateX(-300%);
+  }
+  90% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+#logo {
+  position: absolute;
+  top: 30px;
+  right: 900px;
+  font-size: 50px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-family: sans-serif; */
+  font-family: "Abril Fatface", cursive;
+  font-family: "Dosis", sans-serif;
+  font-family: "DynaPuff", cursive;
+  font-family: "Sansita Swashed", cursive;
+  text-transform: capitalize;
+}
+
+.img1 .img2 {
+  position: relative;
+  width: 100%;
+}
+
+.img1 {
+  background-image: url(/Img/img1.jpg);
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.img2 {
+  padding-top: 200px;
+  padding-right: 20%;
+  width: 80%;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap");
+
+/* SPOTIFY */
+
+:root {
+  /* Colors */
+  --first-color: hsl(217, 75%, 80%);
+  --body-color: hsl(211, 100%, 95%);
+
+  /* Font */
+  --body-font: "Montserrat Alternates", sans-serif;
+  --normal-font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button1 {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  background-color: #ccc;
+  color: #000;
+  padding: 20px 100px;
+  border-radius: 10px;
+  transition: 0.4s;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Dosis", sans-serif;
+  font-family: "DynaPuff", cursive;
+  font-family: "Sansita Swashed", cursive;
+}
+
+.button1::after {
+  content: "";
+  width: 80z;
+  height: 40%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  margin: 0 auto;
+  border-radius: 3rem;
+  filter: blur(12px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s;
+  box-shadow: 0px 0px 60px #5bf961;
+}
+
+.button__text1 {
+  position: relative;
+  z-index: 10;
+}
+
+.button1 img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  pointer-events: none;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+/* Move 3D geometric elements */
+.button1__spotify2 {
+  width: 18px;
+  transform: translate(-25px, -6px) rotate(55deg);
+  filter: blur(0.5px);
+}
+
+.button1__spotify1 {
+  width: 38px;
+  transform: translate(7px, -14px) rotate(80deg);
+}
+
+.button1__spotify3 {
+  width: 36px;
+  transform: translate(34px, -4px) rotate(-45deg);
+  filter: blur(0.9px);
+}
+
+.button1__spotify4 {
+  width: 30px;
+  transform: translate(-5px, 15px) rotate(40deg);
+}
+
+/* View shadow gradient */
+.button1:hover::after {
+  opacity: 1;
+}
+
+/* Button scale */
+.button1:hover {
+  transform: scale(1.3);
+  background-color: rgb(21, 194, 21);
+  color: #fff;
+}
+
+/* View 3D geometric elements */
+.button1:hover img {
+  opacity: 1;
+}
+
+.button1:hover .button1__spotify2 {
+  transform: translate(-38px, -10px) scale(1.2);
+}
+
+.button1:hover .button1__spotify1 {
+  transform: translate(7px, -32px) scale(1.1);
+}
+
+.button1:hover .button1__spotify3 {
+  transform: translate(50px, -20px) scale(1.1);
+}
+
+.button1:hover .button1__spotify4 {
+  transform: translate(-14px, 20px) scale(1.1);
+}
+
+/* ITUNES */
+
+:root {
+  /* Colors */
+  --first-color: hsl(217, 75%, 80%);
+  --body-color: hsl(211, 100%, 95%);
+
+  /* Font */
+  --body-font: "Montserrat Alternates", sans-serif;
+  --normal-font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button2 {
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  background-color: #ccc;
+  color: #000;
+  padding: 20px 100px;
+  border-radius: 10px;
+  transition: 0.4s;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Dosis", sans-serif;
+  font-family: "DynaPuff", cursive;
+  font-family: "Sansita Swashed", cursive;
+}
+
+.button2::after {
+  content: "";
+  width: 80%;
+  height: 40%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  margin: 0 auto;
+  border-radius: 3rem;
+  filter: blur(12px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s;
+  box-shadow: 0px 0px 60px rgb(0, 255, 255);
+}
+
+.button__text2 {
+  position: relative;
+  z-index: 10;
+}
+
+.button2 img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  pointer-events: none;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+/* Move 3D geometric elements */
+.button2__itunes2 {
+  width: 18px;
+  transform: translate(-25px, -6px) rotate(55deg);
+  filter: blur(0.5px);
+}
+
+.button2__itunes1 {
+  width: 38px;
+  transform: translate(7px, -14px) rotate(80deg);
+}
+
+.button2__itunes3 {
+  width: 36px;
+  transform: translate(34px, -4px) rotate(-45deg);
+  filter: blur(0.9px);
+}
+
+.button2__itunes4 {
+  width: 30px;
+  transform: translate(-5px, 15px) rotate(40deg);
+}
+
+/* View shadow gradient */
+.button2:hover::after {
+  opacity: 1;
+}
+
+/* Button scale */
+.button2:hover {
+  transform: scale(1.3);
+  background-color: rgb(0, 255, 255);
+  color: #fff;
+}
+
+/* View 3D geometric elements */
+.button2:hover img {
+  opacity: 1;
+}
+
+.button2:hover .button2__itunes2 {
+  transform: translate(-38px, -10px) scale(1.2);
+}
+
+.button2:hover .button2__itunes1 {
+  transform: translate(7px, -32px) scale(1.1);
+}
+
+.button2:hover .button2__itunes3 {
+  transform: translate(50px, -20px) scale(1.1);
+}
+
+.button2:hover .button2__itunes4 {
+  transform: translate(-14px, 20px) scale(1.1);
+}
+
+/* Gaana */
+
+:root {
+  /* Colors */
+  --first-color: hsl(217, 75%, 80%);
+  --body-color: hsl(211, 100%, 95%);
+
+  /* Font */
+  --body-font: "Montserrat Alternates", sans-serif;
+  --normal-font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button3 {
+  position: absolute;
+  top: 450px;
+  left: 150px;
+  background-color: #ccc;
+  color: #000;
+  padding: 20px 100px;
+  border-radius: 10px;
+  transition: 0.4s;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Dosis", sans-serif;
+  font-family: "DynaPuff", cursive;
+  font-family: "Sansita Swashed", cursive;
+}
+
+.button3::after {
+  content: "";
+  width: 80%;
+  height: 40%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  margin: 0 auto;
+  border-radius: 3rem;
+  filter: blur(12px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s;
+  box-shadow: 0px 0px 60px rgb(244, 0, 0);
+}
+
+.button__text3 {
+  position: relative;
+  z-index: 10;
+}
+
+.button3 img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  pointer-events: none;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+/* Move 3D geometric elements */
+.button3__gaana2 {
+  width: 18px;
+  transform: translate(-25px, -6px) rotate(55deg);
+  filter: blur(0.5px);
+}
+
+.button3__gaana1 {
+  width: 20px;
+  transform: translate(7px, 14px) rotate(80deg);
+  filter: blur(0.5px);
+}
+
+.button3__gaana3 {
+  width: 60px;
+  transform: translate(34px, -4px) rotate(-45deg);
+}
+
+.button3__gaana4 {
+  width: 29px;
+  transform: translate(-5px, 15px) rotate(40deg);
+  filter: blur(0.5px);
+}
+
+/* View shadow gradient */
+.button3:hover::after {
+  opacity: 1;
+}
+
+/* Button scale */
+.button3:hover {
+  transform: scale(1.3);
+  background-color: rgb(240, 0, 0);
+  color: #fff;
+}
+
+/* View 3D geometric elements */
+.button3:hover img {
+  opacity: 1;
+}
+
+.button3:hover .button3__gaana2 {
+  transform: translate(-38px, -30px) scale(1.2);
+}
+
+.button3:hover .button3__gaana1 {
+  transform: translate(-30px, -30px) scale(1.1);
+}
+
+.button3:hover .button3__gaana3 {
+  transform: translate(50px, -25px) scale(1.1);
+}
+
+.button3:hover .button3__gaana4 {
+  transform: translate(-14px, 30px) scale(1.1);
+}
+
+/* SAAVN */
+
+:root {
+  /* Colors */
+  --first-color: hsl(217, 75%, 80%);
+  --body-color: hsl(211, 100%, 95%);
+
+  /* Font */
+  --body-font: "Montserrat Alternates", sans-serif;
+  --normal-font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button4 {
+  position: absolute;
+  top: 450px;
+  right: 150px;
+  background-color: #ccc;
+  color: #000;
+  padding: 20px 100px;
+  border-radius: 10px;
+  transition: 0.4s;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Dosis", sans-serif;
+  font-family: "DynaPuff", cursive;
+  font-family: "Sansita Swashed", cursive;
+}
+
+.button4::after {
+  content: "";
+  width: 80%;
+  height: 40%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  margin: 0 auto;
+  border-radius: 3rem;
+  filter: blur(12px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s;
+  box-shadow: 0px 0px 60px rgb(0, 255, 166);
+}
+
+.button__text4 {
+  position: relative;
+  z-index: 10;
+}
+
+.button4 img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  pointer-events: none;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+/* Move 3D geometric elements */
+.button4__saavn1 {
+  width: 18px;
+  transform: translate(-25px, -6px) rotate(55deg);
+  filter: blur(0.5px);
+}
+
+.button4__saavn2 {
+  width: 20px;
+  transform: translate(7px, 14px) rotate(80deg);
+  filter: blur(0.5px);
+}
+
+.button4__saavn3 {
+  width: 60px;
+  transform: translate(34px, -4px) rotate(-45deg);
+}
+
+.button4__saavn4 {
+  width: 29px;
+  transform: translate(-5px, 15px) rotate(40deg);
+  filter: blur(0.5px);
+}
+
+/* View shadow gradient */
+.button4:hover::after {
+  opacity: 1;
+}
+
+/* Button scale */
+.button4:hover {
+  transform: scale(1.3);
+  background-color: rgb(0, 255, 166);
+  color: #fff;
+}
+
+/* View 3D geometric elements */
+.button4:hover img {
+  opacity: 1;
+}
+
+.button4:hover .button4__saavn1 {
+  transform: translate(-38px, -30px) scale(1.2);
+}
+
+.button4:hover .button4__saavn2 {
+  transform: translate(-30px, -30px) scale(1.1);
+}
+
+.button4:hover .button4__saavn3 {
+  transform: translate(50px, -25px) scale(1.1);
+}
+
+.button4:hover .button4__saavn4 {
+  transform: translate(-14px, 30px) scale(1.1);
+}
+
+/* Amazon Music */
+
+:root {
+  /* Colors */
+  --first-color: hsl(217, 75%, 80%);
+  --body-color: hsl(211, 100%, 95%);
+
+  /* Font */
+  --body-font: "Montserrat Alternates", sans-serif;
+  --normal-font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button5 {
+  position: absolute;
+  top: 300px;
+  right: 150px;
+  background-color: #ccc;
+  color: #000;
+  padding: 20px 65px;
+  border-radius: 10px;
+  transition: 0.4s;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Dosis", sans-serif;
+  font-family: "DynaPuff", cursive;
+  font-family: "Sansita Swashed", cursive;
+}
+
+.button5::after {
+  content: "";
+  width: 80%;
+  height: 40%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  margin: 0 auto;
+  border-radius: 3rem;
+  filter: blur(12px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s;
+  box-shadow: 0px 0px 100px rgb(51, 0, 255);
+}
+
+.button__text5 {
+  position: relative;
+  z-index: 10;
+}
+
+.button5 img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  pointer-events: none;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+/* Move 3D geometric elements */
+.button5__AM1 {
+  width: 90px;
+  transform: translate(50px, -6px) rotate(55deg);
+  filter: blur(0.5px);
+}
+
+.button5__AM2 {
+  width: 175px;
+  transform: translate(7px, 14px) rotate(80deg);
+  filter: blur(0.5px);
+}
+
+.button5__AM3 {
+  width: 80px;
+  transform: translate(34px, -4px) rotate(-45deg);
+}
+
+/* View shadow gradient */
+.button5:hover::after {
+  opacity: 9;
+}
+
+/* Button scale */
+.button5:hover {
+  transform: scale(1.3);
+  background-color: rgba(51, 0, 255, 0.765);
+  color: #fff;
+}
+
+/* View 3D geometric elements */
+.button5:hover img {
+  opacity: 1;
+}
+
+.button5:hover .button5__AM1 {
+  transform: translate(-80px, -30px) scale(1.2);
+}
+
+.button5:hover .button5__AM2 {
+  transform: translate(40px, 20px) scale(1.1);
+}
+
+.button5:hover .button5__AM3 {
+  transform: translate(110px, -20px) scale(1.1);
+}
+
+/* Youtube Music */
+
+:root {
+  /* Colors */
+  --first-color: hsl(217, 75%, 80%);
+  --body-color: hsl(211, 100%, 95%);
+
+  /* Font */
+  --body-font: "Montserrat Alternates", sans-serif;
+  --normal-font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button6 {
+  position: absolute;
+  top: 150px;
+  right: 150px;
+  background-color: #ccc;
+  color: #000;
+  padding: 20px 65px;
+  border-radius: 10px;
+  transition: 0.4s;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Dosis", sans-serif;
+  font-family: "DynaPuff", cursive;
+  font-family: "Sansita Swashed", cursive;
+}
+
+.button6::after {
+  content: "";
+  width: 80%;
+  height: 40%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  margin: 0 auto;
+  border-radius: 3rem;
+  filter: blur(12px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s;
+  box-shadow: 0px 0px 100px rgb(207, 3, 3);
+}
+
+.button__text6 {
+  position: relative;
+  z-index: 10;
+}
+
+.button6 img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  pointer-events: none;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+/* Move 3D geometric elements */
+.button6__yt1 {
+  width: 30px;
+  transform: translate(50px, -6px) rotate(55deg);
+  filter: blur(0.5px);
+}
+
+.button6__yt2 {
+  width: 80px;
+  transform: translate(7px, 14px) rotate(80deg);
+}
+
+.button6__yt3 {
+  width: 40px;
+  transform: translate(34px, -4px) rotate(-45deg);
+  filter: blur(0.5px);
+}
+
+/* View shadow gradient */
+.button6:hover::after {
+  opacity: 1;
+}
+
+/* Button scale */
+.button6:hover {
+  transform: scale(1.3);
+  background-color: rgb(207, 3, 3);
+  color: #fff;
+}
+
+/* View 3D geometric elements */
+.button6:hover img {
+  opacity: 1;
+}
+
+.button6:hover .button6__yt1 {
+  transform: translate(-80px, -30px) scale(1.2);
+}
+
+.button6:hover .button6__yt2 {
+  transform: translate(10px, 25px) scale(1.1);
+}
+
+.button6:hover .button6__yt3 {
+  transform: translate(110px, -30px) scale(1.1);
+}

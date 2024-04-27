@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>KENSICK | Official Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="/Img/logo.png" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/72c2cdf33d.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="hero-gif" ></div>
+
+
+	
+	
+	<div class="music-title">
+		<h1 class="glitch" data-text="new">Meri Banjao</h1>
+		<p class="para">The new song</p>
+	</div>
+
+
+
+
+	<div class="rotatethis">
+		<h2 id="rotated">kensick • kensick • kensick • kensick •</h2>
+	</div>
+	<div class="title">
+		<h1>KENSICK</h1>
+	</div>
+
+	<div class="gif-overlay"></div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+	
+	
+	<!-- <video poster="" playsinline autoplay muted loop>
+		<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.webm" type="video/webm">
+		 <source src="./Audio/reel.mp4" type="video/mp4"> -->
+	<!-- </video>  -->
+	<header>
+
+		<div class="menu-icon">
+			<div class="inner-width">
+				<i class="fa-brands fa-kickstarter-k" style="position: absolute; top: 2px;width: 0px;"></i>
+			</div>
+		</div>
+		<div style="display: flex;">
+			<div class="main">
+				<div class="logo">
+
+				</div>
+			</div>
+
+			
+
+			
+			<div class="button" style="display:grid;">
+				<div style="display: flex;justify-content:flex-end;align-items:center">
+					<div><a href="https://youtu.be/9PW-SAfp0-Y" class="btn"
+							target="_blank">𝐖𝐀𝐓𝐂𝐇 𝐕𝐈𝐃𝐄𝐎</a></div>
+					<div><a href="https://open.spotify.com/album/4ttauoJJ7YYvRUVFX0DYqG?si=7YyzhlfEQnmde7ishmK-9g" class="btn"
+							target="_blank">𝐋𝐈𝐒𝐓𝐄𝐍 𝐒𝐎𝐍𝐆</a></div>
+				</div>
+			</div>
+
+			<div class="wrapper1">
+				<div class="media">
+					<ul>
+						<div class="sm1">
+							<a href="https://www.facebook.com/profile.php?id=100008485728152" target="_blank">
+								<li><i class="fa-brands fa-facebook"></i></li>
+							</a>
+						</div>
+						<div class="sm2">
+							<a href="https://instagram.com/kensiick?igshid=YmMyMTA2M2Y=" target="_blank">
+								<li><i class="fa-brands fa-instagram"></i></li>
+							</a>
+						</div>
+						<div class="sm3">
+							<a href="https://www.snapchat.com/add/kensiick?share_id=2039UVWHjAk&locale=en-US"
+								target="_blank">
+								<li><i class="fa-brands fa-snapchat"></i></li>
+							</a>
+						</div>
+						<div class="sm4">
+							<a href="#" target="_blank">
+								<li><i class="fa-brands fa-twitter"></i></li>
+							</a>
+							<div class="sm5">
+								<a href="https://www.youtube.com/channel/UCpXJRd5XYe6IlIShUYXOIUQ" target="_blank">
+									<li><i class="fa-brands fa-youtube"></i></li>
+								</a>
+							</div>
+					</ul>
+				</div>
+			</div>
+
+			
+
+			<div class="navigation-menu">
+				<div class="wrapper"></div>
+				<div class="hero-title">
+					<h1>KENSICK</h1>
+				</div>
+
+				<nav>
+					<li class="bton"><a href="">HOME</a></li>
+					<li class="bton"><a href="/Music.html" target="_blank">MUSIC</a></li>
+					<li class="bton"><a href="./merch.html" target="_blank">MERCH</a></li>
+					<li class="bton"><a href="/Contact.html" target="_blank">CONTACT</a></li>
+				</nav>
+
+
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+				<script src="hover-effect.umd.js"></script>
+
+				<script>
+
+					var hoverDistort = new hoverEffect({
+						parent: document.querySelector('.wrapper'),
+						intensity: 0.5,
+						image1: '/img/img3.jpg',
+						image2: '/img/img2.jpg',
+						displacementImage: '/img/4.png'
+					});
+
+
+					var textWrapper = document.querySelector('.hero-title');
+					textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+					$(document).ready(function () {
+
+						$('.wrapper').hover(
+							function () {
+								anime.timeline({ loop: false })
+									.add({
+										targets: '.hero-title .letter',
+										translateX: [80, 0],
+										translateZ: 0,
+										opacity: [0, 1],
+										easing: "easeOutExpo",
+										duration: 1400,
+										delay: (el, i) => 100 + 40 * i
+									})
+							},
+
+							function () {
+								anime.timeline({ loop: false })
+									.add({
+										targets: '.hero-title .letter',
+										translateX: [0, -80],
+										opacity: [1, 0],
+										easing: "easeInExpo",
+										duration: 800,
+										delay: (el, i) => 40 * i
+									});
+							}
+						);
+
+					});
+
+				</script>
+
+				
+			</div>
+		</div>
+
+
+
+		<script>
+			$(".menu-icon").click(function () {
+				$(this).toggleClass("active");
+				$(".navigation-menu").toggleClass("active");
+				$(".menu-icon i").toggleClass("fa");
+			});
+		</script>
+
+
+
+	</header>
+	<script>
+		const circleType = new CircleType(document.getElementById('rotated'));
+
+		TweenMax.from(".hero-gif", 2, {
+			delay: 0.5,
+			opacity: 0,
+			y: 20,
+			ease: Expo.easeInOut
+		});
+
+		TweenMax.from(".glitch", 2, {
+			delay: 1.5,
+			opacity: 0,
+			x: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".para", 2, {
+			delay: 2.5,
+			opacity: 0,
+			y: 20,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".rotatethis", 2, {
+			delay: 3.5,
+			opacity: 0,
+			y: 20,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".title", 2, {
+			delay: 0.5,
+			opacity: 0,
+			y: 20,
+			ease: Expo.easeInOut
+		});
+				
+		TweenMax.from(".wrapper1", 2, {
+			delay: 1.5,
+			opacity: 0,
+			
+			ease: Expo.easeInOut
+		});
+
+		TweenMax.from(".button", 2, {
+			delay: 1.5,
+			opacity: 0,
+			y: 20,
+			ease: Expo.easeInOut
+		});
+
+
+
+	</script>
+
+</body>
+
+</html>

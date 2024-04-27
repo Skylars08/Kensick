@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Cosi Azure";
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	
+}
+
+html,body{
+	background-position: center;
+	margin: 0%;
+	padding: 0%;
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	background-image: url(./Img/gify.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: #fff;
+}
+
+
+/* .gif-overlay{
+	margin: 0%;
+	padding: 0%;
+	width: 100%;
+	height: 100%;
+	background: rgba(14, 14, 14, 0.8);
+	z-index: -1;
+} */
+
+.hero-gif{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 48vw;
+	height: 46vh;
+	background: url(./Img/giphy.gif) no-repeat 50% 50%;
+	background-size: cover;
+	animation: animategif 4s cubic-bezier(0, .58, 1, .58);
+	animation-delay: 2s;
+}
+
+@keyframes animationgif {
+	0%{
+		width: 100%;
+		height: 100vh;
+	}
+
+	40%{
+		width: 100%;
+		height: 100vh;
+	}
+
+	100%{
+		width: 48vw;
+		height: 46vh;
+	}
+}
+
+.music-title{
+	position: absolute;
+	top: 40%;
+	left: 25.46%;
+	transform: translate(-50%, -50%);
+	mix-blend-mode: difference;
+	
+}
+
+.music-title h1{
+	color: #fff;
+	font-size: 4rem;
+	margin-bottom: 0%;
+	font-family: 'Bebas Neue', sans-serif;
+	overflow: hidden;
+}
+
+
+
+.music-title p{
+	color: grey;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 2.8rem;
+}
+
+#rotated{
+	color: #fff;
+	font-family: 'Bebas Neue', sans-serif;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+.rotatethis{
+	position: absolute;
+	top: 64%;
+	left: 74%;
+	transform: translate(-50%, -50%);
+	animation: rotating 20s linear infinite;
+}
+
+@keyframes rotating {
+	from{
+		transform: rotate(0deg);
+	} 
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@media(max-width: 900px){
+	.rotatethis, .music-title p, .hero-gif{
+		display: none;
+	}
+
+	
+
+	.music-title{
+		top: 45%;
+		left: 50%;
+	}
+
+	.music-title h1{
+		font-size: 32px;
+	}
+}
+
+
+
+
+
+/* video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+} */
+
+header{
+	/* background-image: url(/Img/jam--FH-VMcElVM-unsplash.jpg); */
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.inner-width{
+	max-width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 28px;
+	margin: auto;
+	color: #f1f1f1;
+}
+
+
+.menu-icon{
+	position: absolute;
+	width: 80px;
+	height: 50px;
+	top: 10px;
+	right: 70px;
+	background: transparent;
+	color: #fff;
+	text-align: center;
+	line-height: 0px;
+	font-size: 50px;
+	z-index: 2;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.2s linear;
+}
+
+.menu-icon:hover{
+	opacity: 0.9;
+	transform: translate(0px, 0px) rotate(-360deg);
+	background: transparent;
+}
+
+
+.navigation-menu{
+	font-family: "Cosi Azure";
+    text-transform: capitalize;
+    font-size: 40px ;
+    color: white;
+    display: inline-block;
+    text-align:left;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #161616;
+	top: 0;
+	right: -100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.6s;
+} 
+
+
+.navigation-menu nav{
+	display: grid;
+}
+
+.navigation-menu li{
+	margin: 20px 0;
+	overflow: hidden;	
+}
+
+.navigation-menu a{
+	color: #fff;
+	font-size: 48px;
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+	transform: translateY(48px);
+}
+
+.navigation-menu a::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 3px;
+	background: white;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	transition: 0.2s linear;
+}
+
+.navigation-menu a:hover::before{
+	width: 100%;
+	overflow: hidden;
+}
+
+p{
+	max-width: 88%;
+	margin: auto;
+	padding: 40px 0;
+	font-size: 18px;
+	line-height: 1.4cm;
+	text-align: justify;
+}
+
+.menu-icon.active{
+	background: #f1f1f1;
+	color: #2c3a47;
+}
+
+.navigation-menu.active{
+	right: 0;
+}
+
+.navigation-menu.active a{
+	transform: translateY(0);
+	transition: 0.6s linear;
+}
+
+.navigation-menu.active li:nth-child(1) a{
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	transition-delay: 0.2s;
+}
+.navigation-menu.active li:nth-child(2) a{
+	position: absolute;
+	top: 35%;
+	left: 5%;
+	transition-delay: 0.4s;
+}
+.navigation-menu.active li:nth-child(3) a{
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transition-delay: 0.6s;
+}
+.navigation-menu.active li:nth-child(4) a{
+	position: absolute;
+	top: 65%;
+	left: 5%;
+	transition-delay: 0.8s;
+}
+.navigation-menu.active li:nth-child(5) a{
+	position: absolute;
+	top: 80%;
+	left: 5%;
+	transition-delay: 1s;
+}
+
+.wrapper {
+	width: 800px;
+	height: 600px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+.hero-title {
+	position: absolute;
+	top: 62%;
+	left: 63.2%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: "Cosi Azure";
+	font-size: 84px;
+	transform: rotate(90deg);
+}
+
+.hero-title .letter {
+	display: inline-block;
+	opacity: 0;
+}
+
+
+
+.logo imp{
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+.main{
+	display: flex;
+}
+.title{
+	position: absolute;
+	top: 10%;
+	left: 42%;
+	transform: translate(-50%,-50);
+	
+}
+.title h1{
+	color: #fff;
+	font-size: 50px;
+	font-family: 'Bebas Neue', sans-serif;
+	letter-spacing: 2rem;
+}
+
+.button{
+	position: absolute;
+	bottom: -10rem;
+	left: 35rem;
+	margin: 275px 150px;
+	padding: 10px 40px;
+	transform: translate(-50%,-50);
+}
+
+.btn{
+	position: relative;
+	border: 1px solid #fff;
+	padding: 10px 40px;
+	margin: 10px ;
+	color: #fff;
+	/* text-decoration: none; */
+	transition: 0.6s ease;
+}
+
+.btn:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+
+li{
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 20px;
+    color: #fff;
+    border-radius: 50%;
+    transition: 0.6s ease;
+}
+
+.media{
+      position: absolute;
+      top: 225px;
+      left: 110px;
+      transform: translate(-53%, -50%);
+	  width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+}
+
+li:hover{
+    color: #ccc;
+    transition: 0.6s ease;
+}
+

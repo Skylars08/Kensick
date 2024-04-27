@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KENSICK</title>
+    <link rel="stylesheet" type="text/css" href="Start.css">
+    <link rel="icon" href="/Img/logo.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <button class="bton"><b>KENSICK ON WAY </b></button>
+            <div class="text-container"></div>
+            <div class="text-wrapper">
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br><br>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br><br>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br><br>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br><br>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br><br>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br><br>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br><br>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br><br>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br><br>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br><br>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br><br>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia nihil magni,
+                    consequuntur illum laborum assumenda voluptate ullam vitae velit fuga animi dignissimos nobis id
+                    deserunt dicta culpa unde dolor!</div><br><br>
+            </div>
+        </div>
+        <div class="header">
+            <a href="/kensickHomepage.html" target="_self">KENSICK
+            </a>
+        </div>
+        <script>
+            const bton = document.querySelector(".bton");
+
+            bton.addEventListener("click", function () {
+                gsap.to(".bton", 1, {
+                    opacity: 0,
+                    y: -40,
+                    ease: Expo.easeInOut,
+                });
+
+                gsap.to(".text-wrapper > div", 1, {
+                    x: "500",
+                    ease: Expo.easeInOut,
+                    delay: 1,
+                    stagger: 0.1,
+                });
+
+                gsap.to(".text-wrapper", 2, {
+                    y: -600,
+                    scale: 4.5,
+                    rotate: -90,
+                    ease: Expo.easeInOut,
+                    delay: 1.5,
+                });
+
+                gsap.to(".text", 3, {
+                    opacity: 1,
+                    ease: Expo.easeInOut,
+                    delay: 3,
+                });
+
+                gsap.to(".text-wrapper > div", 4, {
+                    x: "-3500",
+                    ease: Expo.easeInOut,
+                    delay: 3.5,
+                    stagger: 0.05,
+                });
+
+                gsap.to(".text-container", 5, {
+                    bottom: "-100%",
+                    ease: Expo.easeInOut,
+                    delay: 6,
+                });
+
+                let textWrapper = document.querySelector(".header");
+                textWrapper.innerHTML = textWrapper.textContent.replace(
+                    /\S/g,
+                    "<span class='letter'>$&</span>"
+                );
+
+                anime.timeline().add({
+                    target: ".header .letter",
+                    opacity: [0, 1],
+                    translateY: [200, 0],
+                    translateZ: 0,
+                    easing: "easeOutExpo",
+                    duration: 2000,
+                    delay: (el, i) => 7000 + 40 * i,
+                });
+            });
+        </script>
+    </header>
+</body>
+
+</html>

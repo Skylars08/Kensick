@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.top-nav {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    font-size: 17px;
+    text-align: center;
+    padding: 1em;
+    padding-right: 2.5em;
+    font-weight: 300;
+}
+
+.nav{
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.nav .branding{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.marquee {
+    width: 100%;
+    margin: 0  auto;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-top: 1.2em;
+}
+
+.marquee span{
+    font-family: 'Agdasima', sans-serif;
+    font-weight: 700;
+    color: #ff4c00;
+    font-size: 8em;
+    text-transform: uppercase;
+    display: inline-block;
+    animation: marquee-animation 80s linear infinite;
+}
+
+@keyframes marquee-animation {
+    0%{
+        transform: translate(0, 0);
+    }
+
+    100%{
+        transform: translate(-100%, 0);
+    }
+}
+
+.col {
+    width: 50%;
+    padding: 1em 3em;
+}
+
+.contact-section h3{
+    text-transform: uppercase;
+    color: #747474;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-section span{
+    text-transform: uppercase;
+}
+
+.contact-details p{
+    font-size: 5em;
+    line-height: 60px;
+    padding-top: 1.5em;
+}
+
+.item{
+    padding: 4em 0 0 0;
+}
+
+.contact-info{
+    position: absolute;
+    top: 12em;
+    right: 15em;
+    font-size: 1.9em;
+    display: flex;
+}
+
+
+.address{
+    padding-left: 4em;
+}
+
+
+.bottom-nav{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+    font-size: 17px;
+    text-align: center;
+    padding: 1em;
+    font-weight: 300;
+}
+
+.extra{
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
